@@ -1,0 +1,23 @@
+icli - Icinga Command Line Interface
+
+Requires:
+ * perl version 5.10 or newer
+ * A local icinga daemon + access to some of its files
+
+Installation:
+
+ > perl Build.PL
+ > ./Build
+ > ./Build test
+ > sudo ./Build install
+
+You can then run 'man icli' for more information.
+
+Extra modules required for testing:
+ * Test::More
+ * Test::Compile
+ * Test::Pod
+ * Test::Command
+
+
+http://derf.homelinux.org/projects/icinga-cli

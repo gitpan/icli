@@ -1,0 +1,24 @@
+icli 0.4 - Mon Jan 31 2011
+
+    * icli -vvv lists hosts/services with maximum verbosity
+    * Acknowledging of host/service problems
+    * Cut off or break long lines with -x (improves output readability)
+    * Print long plugin output in -vv/-vvv (if available)
+    * Fix -C (didn't remove all colours)
+
+icli 0.3 - Sun Nov 21 2010
+
+    * Show service flags with -v -ls (acknowledged, flapping etc.)
+    * Filter hosts/services by check state or various flags
+    * icli -vv lists hosts/services in an even more detailed manner
+
+icli 0.2 - Mon Nov 08 2010
+
+    * List downtimes and check queue
+    * Reschedule service checks
+    * Filter by host/hostgroup and/or service name
+
+icli 0.1 - Thu Jul 29 2010
+
+    * First release
+    * listing of service/host states, filtered by hosts/hostgroups
