@@ -1,15 +1,14 @@
 bin/icli
 Build.PL
 Changelog
+COPYING
 MANIFEST			This list of files
-MANIFEST.SKIP
 README
 t/00-compile.t
 t/10-pod-coverage.t
-t/50-icli.t
+t/50-icli.at
 t/in/objects.cache
 t/in/status.dat
-t/in/status.dat.downtimes
 t/in/status.dat.weird.1
 t/in/status.dat.weird.2
 t/out/filter_.A.o
@@ -33,8 +32,6 @@ t/out/hosts_short
 t/out/list_hosts
 t/out/list_hosts_nc
 t/out/list_hosts_v
-t/out/list_queue
-t/out/list_queue_aneurysm
 t/out/list_services
 t/out/list_services_nc
 t/out/list_services_single
@@ -43,3 +40,4 @@ t/out/services_group_local
 t/out/services_short
 t/out/standard
 META.yml
+META.json
