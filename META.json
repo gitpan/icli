@@ -32,6 +32,7 @@
             "Carp" : 0,
             "Date::Format" : 0,
             "Getopt::Long" : 0,
+            "List::MoreUtils" : 0,
             "Term::ANSIColor" : 0,
             "Term::Size" : 0,
             "autodie" : 0,
@@ -40,5 +41,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.41"
+   "version" : "0.42"
 }
