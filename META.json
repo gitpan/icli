@@ -4,7 +4,7 @@
       "Copyright (C) 2010 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "unrestricted"
    ],
@@ -16,10 +16,10 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::Command" : 0,
-            "Test::Compile" : 0,
-            "Test::More" : 0,
-            "Test::Pod" : 0
+            "Test::Command" : "0",
+            "Test::Compile" : "0",
+            "Test::More" : "0",
+            "Test::Pod" : "0"
          }
       },
       "configure" : {
@@ -29,17 +29,17 @@
       },
       "runtime" : {
          "requires" : {
-            "Carp" : 0,
-            "Date::Format" : 0,
-            "Getopt::Long" : 0,
-            "List::MoreUtils" : 0,
-            "Term::ANSIColor" : 0,
-            "Term::Size" : 0,
-            "autodie" : 0,
+            "Carp" : "0",
+            "Date::Format" : "0",
+            "Getopt::Long" : "0",
+            "List::MoreUtils" : "0",
+            "Term::ANSIColor" : "0",
+            "Term::Size" : "0",
+            "autodie" : "0",
             "perl" : "v5.10.0"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.42"
+   "version" : "0.44"
 }
