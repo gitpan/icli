@@ -41,3 +41,4 @@ t/out/list_services_v
 t/out/services_group_local
 t/out/services_short
 t/out/standard
+SIGNATURE    Added here by Module::Build

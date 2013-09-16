@@ -7,6 +7,8 @@ use strict;
 use warnings;
 use 5.010;
 
+no if $] >= 5.018, warnings => "experimental::smartmatch";
+
 use Carp qw(croak);
 use Date::Format;
 use Getopt::Long qw/:config bundling/;
@@ -14,7 +16,7 @@ use List::MoreUtils qw(any firstval);
 use Term::ANSIColor;
 use Term::Size;
 
-our $VERSION = '0.44';
+our $VERSION = '0.45';
 
 my ( $cache, $config, $data, $extra );
 my $config_file = '/var/cache/icinga/objects.cache';
@@ -230,6 +232,8 @@ sub filter_generic {
 			or ( $f eq '!D' and not check_is_host_down($x) )
 			or ( $f eq 'F'  and $x->{'is_flapping'} )
 			or ( $f eq '!F' and not $x->{'is_flapping'} )
+			or ( $f eq 'N'  and not $x->{'notifications_enabled'} )
+			or ( $f eq '!N' and $x->{'notifications_enabled'} )
 			or (    $f eq 'P'
 				and $x->{'passive_checks_enabled'}
 				and not $x->{'active_checks_enabled'} )
@@ -367,7 +371,7 @@ sub read_objects_line {
 				[
 					qw[
 					  timeperiod command contactgroup contact host service
-					  servicedependency module
+					  servicedependency serviceescalation module
 					  ]
 				]
 			  )
@@ -1020,7 +1024,7 @@ B<icli> [B<-v>|B<-vv>] [B<-z> I<filter>] [B<-h> I<hosts>] [B<-g> I<hostgroups>]
 
 =head1 VERSION
 
-version 0.44
+version 0.45
 
 =head1 DESCRIPTION
 
