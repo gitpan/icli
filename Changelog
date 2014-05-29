@@ -1,3 +1,14 @@
+icli 0.47 - Sat May 24 2014
+
+    * Remove autodie dependency, improve error messages
+    * Allow build-time specification of icinga paths
+      (perl Build.PL --icli-xyz-file=..., see README)
+    * Do not throw warnings when encountering empty contact groups
+    * Do not require --recheck when using --force-recheck
+    * Support --force-recheck with a host-only argument to immediately recheck
+      all services on a host (closses #15)
+    * Fix -lh not showing serviceless hosts (closes #14)
+
 icli 0.46 - Sun Sep 29 2013
 
     * Fix !o filter not matching pending services

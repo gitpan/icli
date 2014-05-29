@@ -8,7 +8,7 @@ build_requires:
   Test::More: 0
   Test::Pod: 0
 configure_requires:
-  Module::Build: 0
+  Module::Build: 0.4
 dynamic_config: 1
 generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
 license: unrestricted
@@ -16,6 +16,10 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: icli
+provides:
+  App::Icli:
+    file: lib/App/Icli.pm
+    version: 0.47
 requires:
   Carp: 0
   Getopt::Long: 0
@@ -23,6 +27,5 @@ requires:
   POSIX: 0
   Term::ANSIColor: 0
   Term::Size: 0
-  autodie: 0
   perl: v5.10.0
-version: 0.46
+version: 0.47

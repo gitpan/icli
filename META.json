@@ -24,7 +24,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0"
+            "Module::Build" : "0.4"
          }
       },
       "runtime" : {
@@ -35,11 +35,16 @@
             "POSIX" : "0",
             "Term::ANSIColor" : "0",
             "Term::Size" : "0",
-            "autodie" : "0",
             "perl" : "v5.10.0"
          }
       }
    },
+   "provides" : {
+      "App::Icli" : {
+         "file" : "lib/App/Icli.pm",
+         "version" : "0.47"
+      }
+   },
    "release_status" : "stable",
-   "version" : "0.46"
+   "version" : "0.47"
 }
